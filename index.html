@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descrição do seu site">
+    <meta name="keywords" content="palavras-chave">
+    <link rel="stylesheet" href="./main.css">
+    <title>Formulário de prática</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formulário de prática</h1>
+    </header>
+
+    <section>
+        <form>
+            <div>
+                <label for="nomeCompleto">Nome Completo</label>
+                <input type="text" id="nomeCompleto" placeholder="Nome Completo" required>
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="E-mail" required>
+            </div>
+            <div>
+                <label for="SeuCpf">CPF</label>
+                <input type="text" id="SeuCpf" placeholder="CPF" required>
+                <span id="CpfError" class="error-message"></span>
+            </div>
+            <div>
+                <label for="SeuTelefone">Telefone</label>
+                <input type="tel" id="SeuTelefone" placeholder="Telefone" required>
+                <span id="telefoneError" class="error-message"></span>
+            </div>
+            <div>
+                <label for="SeuCep">CEP</label>
+                <input type="text" id="SeuCep" placeholder="SeuCep" required>
+                <span id="CepError" class="error-message"></span>
+            </div>
+            <div>
+                <label for="endereco">Endereço Completo</label>
+                <input type="text" id="endereco" placeholder="Endereço Completo" required>
+            </div>
+            <div>
+                <button type="submit">Salvar</button>
+            </div>
+        </form>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
